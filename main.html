@@ -14,19 +14,10 @@
 			if(arr.length<2){
 				return Number.NEGATIVE_INFINITY;
 			}
-			let x=true;
-			for(let i=1;i<arr.length;i++){
-				if(arr[i]!=arr[0]){
-					x=true;
-					break;
-				}
-				else{
-					x=false;
-				}
-			}
-			if(!x){
-				return Number.NEGATIVE_INFINITY;
-			}
+
+
+
+			
 			let max=arr[0];
 			let secondMax=arr[0];
 			for(let i=1;i<arr.length;i++){
@@ -46,10 +37,10 @@
 
 		
 		function Main() {
-			// var n = prompt("Enter the number of elements");
+			 var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
-				//arr[i] = prompt("Enter element " + (i+1));
+				arr[i] = prompt("Enter element " + (i+1));
 			}
 			//
 			alert(secondHighest(arr));

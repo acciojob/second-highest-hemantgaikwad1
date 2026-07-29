@@ -15,6 +15,9 @@
 				return Number.NEGATIVE_INFINITY;
 			}
 
+if (arr.every(val => val === arr[0])) {
+    return Number.NEGATIVE_INFINITY;
+}
 
 
 			
@@ -29,15 +32,6 @@
 				else if(max>arr[i] && secondMax<arr[i]){
 					secondMax=arr[i];
 				}
-			}
-			let same=true;
-			for(let j=0;j<arr.length;j++){
-				if(arr[j]<max){
-					same=false;
-				}
-			}
-			if(same){
-				return Number.NEGATIVE_INFINITY;
 			}
 			
 			return secondMax;

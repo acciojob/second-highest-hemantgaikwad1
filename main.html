@@ -30,7 +30,15 @@
 					secondMax=arr[i];
 				}
 			}
-			
+			let same=true;
+			for(let j=0;j<arr.length:j++){
+				if(arr[j]<max){
+					same=false;
+				}
+			}
+			if(same){
+				return Number.NEGATIVE_INFINITY;
+			}
 			
 			return secondMax;
 		}
@@ -42,7 +50,7 @@
 			for (var i = 0; i < n; i++) {
 				arr[i] = prompt("Enter element " + (i+1));
 			}
-			//
+			
 			alert(secondHighest(arr));
 		}
 		Main();

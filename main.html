@@ -7,6 +7,12 @@
 </head>
 
 <body>	
+	 <h3>Find Second Highest</h3>
+    <label for="numbers">Enter numbers (space separated):</label>
+    <input type="text" id="numbers" />
+    <button onclick="Main()">Submit</button>
+
+    <p id="result"></p>
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
@@ -37,7 +43,14 @@ if (arr.every(val => val === arr[0])) {
 			return secondMax;
 		}
 
-		
+		 function Main() {
+            
+            let input = document.getElementById("numbers").value;
+            let arr = input.trim().split(/\s+/).map(Number);
+
+
+            document.getElementById("result").innerText = "Second highest: " + secondHighest(arr);
+        }
 		
 		
 	</script>

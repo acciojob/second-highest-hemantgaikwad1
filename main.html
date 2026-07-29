@@ -16,7 +16,7 @@
 			}
 			let x=false;
 			for(let i=1;i<arr.length;i++){
-				if(arr[i]===arr[i-1]){
+				if(arr[i]===arr[0]){
 					x=true;
 				}
 				else{
@@ -34,7 +34,7 @@
 					max=arr[i];
 					
 				}
-				else if(secondMax<arr[i]){
+				else if(max>arr[i] && secondMax<arr[i]){
 					secondMax=arr[i];
 				}
 			}
